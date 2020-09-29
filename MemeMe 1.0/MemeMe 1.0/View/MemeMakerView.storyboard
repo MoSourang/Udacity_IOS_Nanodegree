@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16095" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Whi-q4-kua">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16084.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MemeMe -->
+        <scene sceneID="gvR-Za-YDD">
+            <objects>
+                <viewController id="Whi-q4-kua" customClass="MemeMakerViewController" customModule="MemeMe_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SuI-pL-pLb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8e9-3L-2DM">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="50U-4e-pMf" userLabel="Top Toolbar">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="CtN-Wr-PWA">
+                                        <connections>
+                                            <action selector="shareImage:" destination="Whi-q4-kua" id="hvu-qa-Ej4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yrj-d0-IJY"/>
+                                    <barButtonItem systemItem="cancel" id="B87-em-svy">
+                                        <connections>
+                                            <action selector="cancelMeme:" destination="Whi-q4-kua" id="2gK-9t-TVM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="s51-vH-aub" userLabel="Bottom Tool Bar">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <barButtonItem systemItem="flexibleSpace" id="V9N-VK-qGB"/>
+                                    <barButtonItem title="Camera" id="u1R-IU-k4q">
+                                        <connections>
+                                            <action selector="imageSelection:" destination="Whi-q4-kua" id="VPA-k2-54H"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="T9f-1X-snS"/>
+                                    <barButtonItem title="Album" id="OZV-JK-jZT">
+                                        <connections>
+                                            <action selector="imageSelection:" destination="Whi-q4-kua" id="o1v-zZ-mEb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="F0T-NX-YgB"/>
+                                </items>
+                            </toolbar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bottom" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="olc-iU-XCI">
+                                <rect key="frame" x="16" y="723.5" width="383" height="49.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Top" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="CMQ-yR-vtD">
+                                <rect key="frame" x="16" y="128" width="383" height="49.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="olc-iU-XCI" firstAttribute="leading" secondItem="MPz-Ek-QxM" secondAttribute="leading" constant="16" id="2R1-9u-shb"/>
+                            <constraint firstItem="s51-vH-aub" firstAttribute="leading" secondItem="SuI-pL-pLb" secondAttribute="leading" id="6Ku-Hg-SzG"/>
+                            <constraint firstItem="50U-4e-pMf" firstAttribute="trailing" secondItem="SuI-pL-pLb" secondAttribute="trailing" id="6eM-4n-fmC"/>
+                            <constraint firstItem="CMQ-yR-vtD" firstAttribute="leading" secondItem="MPz-Ek-QxM" secondAttribute="leading" constant="16" id="7jF-Qb-KRk"/>
+                            <constraint firstItem="MPz-Ek-QxM" firstAttribute="trailing" secondItem="CMQ-yR-vtD" secondAttribute="trailing" constant="15" id="8dT-Ut-gC5"/>
+                            <constraint firstItem="s51-vH-aub" firstAttribute="top" secondItem="8e9-3L-2DM" secondAttribute="bottom" id="H8m-cd-w9Q"/>
+                            <constraint firstItem="50U-4e-pMf" firstAttribute="leading" secondItem="SuI-pL-pLb" secondAttribute="leading" id="KWS-Ro-2MO"/>
+                            <constraint firstItem="8e9-3L-2DM" firstAttribute="top" secondItem="50U-4e-pMf" secondAttribute="bottom" id="Ntz-TA-oRl"/>
+                            <constraint firstItem="MPz-Ek-QxM" firstAttribute="trailing" secondItem="olc-iU-XCI" secondAttribute="trailing" constant="15" id="T2o-Ae-sju"/>
+                            <constraint firstItem="50U-4e-pMf" firstAttribute="top" secondItem="MPz-Ek-QxM" secondAttribute="top" id="aYJ-QS-5Bj"/>
+                            <constraint firstItem="8e9-3L-2DM" firstAttribute="trailing" secondItem="SuI-pL-pLb" secondAttribute="trailing" id="fWx-5i-pqI"/>
+                            <constraint firstItem="8e9-3L-2DM" firstAttribute="leading" secondItem="SuI-pL-pLb" secondAttribute="leading" id="jLu-hf-3Oe"/>
+                            <constraint firstItem="MPz-Ek-QxM" firstAttribute="bottom" secondItem="s51-vH-aub" secondAttribute="bottom" id="kQa-lA-3I7"/>
+                            <constraint firstItem="CMQ-yR-vtD" firstAttribute="top" secondItem="50U-4e-pMf" secondAttribute="bottom" constant="40" id="loP-gP-l6x"/>
+                            <constraint firstItem="s51-vH-aub" firstAttribute="trailing" secondItem="SuI-pL-pLb" secondAttribute="trailing" id="maN-7d-RO4"/>
+                            <constraint firstItem="s51-vH-aub" firstAttribute="top" secondItem="olc-iU-XCI" secondAttribute="bottom" constant="40" id="wyf-2z-bUw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MPz-Ek-QxM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="MemeMe " id="QYh-kB-Gwj"/>
+                    <connections>
+                        <outlet property="albumButton" destination="OZV-JK-jZT" id="Vpb-oY-cL3"/>
+                        <outlet property="bottomToolBar" destination="s51-vH-aub" id="pr4-dT-2rf"/>
+                        <outlet property="bottonTextField" destination="olc-iU-XCI" id="w1f-EE-kBg"/>
+                        <outlet property="cameraButton" destination="u1R-IU-k4q" id="0I3-qX-O4i"/>
+                        <outlet property="imageSharer" destination="CtN-Wr-PWA" id="xp1-z1-DRb"/>
+                        <outlet property="memeImageView" destination="8e9-3L-2DM" id="mE6-su-XiD"/>
+                        <outlet property="topTextField" destination="CMQ-yR-vtD" id="xvo-Jw-xby"/>
+                        <outlet property="topToolBar" destination="50U-4e-pMf" id="MQd-gv-ZVB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24e-5s-bHi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114" y="-168"/>
+        </scene>
+    </scenes>
+</document>
