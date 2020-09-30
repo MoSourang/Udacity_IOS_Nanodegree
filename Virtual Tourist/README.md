@@ -16,6 +16,11 @@ virtual tourist is an app that enables users to search the flicker Api using a s
 
 
 # How to build 
+1. Create API key from [flickr](https://www.flickr.com/services/api/flickr.photos.search.html)
+2. Download or Clone the project 
+3. change to value of static var APIKey under `PhotoService.swift`to your API key
+3. Run the app using Xcode
+
 
 
  
