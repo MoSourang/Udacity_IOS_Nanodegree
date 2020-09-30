@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16095" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8bk-Ma-lPb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16084.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Location -->
+        <scene sceneID="cC4-Y0-pgF">
+            <objects>
+                <viewController id="20q-6y-nyW" customClass="LocationSearchViewController" customModule="On_The_Map" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1gr-f6-Z49">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_world" translatesAutoresizingMaskIntoConstraints="NO" id="xUO-Py-GR5">
+                                <rect key="frame" x="146" y="124" width="120" height="67"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="Nfi-kj-38u">
+                                <rect key="frame" x="66" y="301" width="280" height="236"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="center" minimumFontSize="17" background="URL " translatesAutoresizingMaskIntoConstraints="NO" id="1si-54-G8W">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="YBx-aL-xN3"/>
+                                            <constraint firstAttribute="height" constant="56" id="plp-DV-mgp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNG-bp-gvV">
+                                        <rect key="frame" x="0.0" y="90" width="280" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="YvR-xI-HpD"/>
+                                            <constraint firstAttribute="width" constant="280" id="ulq-03-t6P"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrw-73-ex1">
+                                        <rect key="frame" x="0.0" y="180" width="280" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="t9t-02-wUW"/>
+                                            <constraint firstAttribute="width" constant="280" id="zPt-xL-Vu6"/>
+                                        </constraints>
+                                        <state key="normal" title="Find Location "/>
+                                        <connections>
+                                            <action selector="findLocationTapped:" destination="20q-6y-nyW" eventType="touchUpInside" id="R8d-BG-vru"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Nfi-kj-38u" firstAttribute="leading" secondItem="v1t-PP-LAl" secondAttribute="leading" constant="66" id="DyQ-1w-BxT"/>
+                            <constraint firstItem="v1t-PP-LAl" firstAttribute="trailing" secondItem="Nfi-kj-38u" secondAttribute="trailing" constant="68" id="H4L-sK-Jv0"/>
+                            <constraint firstItem="v1t-PP-LAl" firstAttribute="trailing" secondItem="xUO-Py-GR5" secondAttribute="trailing" constant="148" id="hcy-7K-hOx"/>
+                            <constraint firstItem="xUO-Py-GR5" firstAttribute="top" secondItem="v1t-PP-LAl" secondAttribute="top" constant="36" id="iDu-ar-f6a"/>
+                            <constraint firstItem="Nfi-kj-38u" firstAttribute="top" secondItem="xUO-Py-GR5" secondAttribute="bottom" constant="110" id="w3E-fu-EAG"/>
+                            <constraint firstItem="xUO-Py-GR5" firstAttribute="leading" secondItem="v1t-PP-LAl" secondAttribute="leading" constant="146" id="y15-CC-S9x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v1t-PP-LAl"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Location " id="ifp-xZ-Kak">
+                        <barButtonItem key="leftBarButtonItem" title="CANCEL" id="wx2-NJ-gUz">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="20q-6y-nyW" id="5pW-P9-oYi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="URLTextField" destination="vNG-bp-gvV" id="7zu-1z-G5j"/>
+                        <outlet property="locationTextField" destination="1si-54-G8W" id="g0n-yD-jy8"/>
+                        <segue destination="KDf-GE-Z0r" kind="show" id="iK6-Ww-U3B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v1f-lA-OKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301" y="84"/>
+        </scene>
+        <!--Add Location-->
+        <scene sceneID="vx0-iN-yM4">
+            <objects>
+                <viewController storyboardIdentifier="AddLocationViewController" id="KDf-GE-Z0r" customClass="LocationViewController" customModule="On_The_Map" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uDi-Gk-tTO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wH5-Jx-yUU">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fu-ha-prX">
+                                <rect key="frame" x="123" y="727" width="169" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Finish ">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="FinishButtonPressed:" destination="KDf-GE-Z0r" eventType="touchUpInside" id="kdw-5l-ydv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wH5-Jx-yUU" firstAttribute="bottom" secondItem="lxr-Pp-LI5" secondAttribute="bottom" id="3PU-zf-Ld4"/>
+                            <constraint firstItem="3Fu-ha-prX" firstAttribute="leading" secondItem="lxr-Pp-LI5" secondAttribute="leading" constant="123" id="6VG-C4-mm0"/>
+                            <constraint firstItem="lxr-Pp-LI5" firstAttribute="bottom" secondItem="3Fu-ha-prX" secondAttribute="bottom" constant="50" id="B69-9I-uah"/>
+                            <constraint firstItem="wH5-Jx-yUU" firstAttribute="leading" secondItem="lxr-Pp-LI5" secondAttribute="leading" id="RdR-Sh-CdK"/>
+                            <constraint firstItem="wH5-Jx-yUU" firstAttribute="top" secondItem="lxr-Pp-LI5" secondAttribute="top" id="TDd-sg-fA9"/>
+                            <constraint firstItem="lxr-Pp-LI5" firstAttribute="trailing" secondItem="3Fu-ha-prX" secondAttribute="trailing" constant="122" id="mGG-Dn-9vt"/>
+                            <constraint firstItem="wH5-Jx-yUU" firstAttribute="trailing" secondItem="lxr-Pp-LI5" secondAttribute="trailing" id="wWS-0y-VF1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lxr-Pp-LI5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Location" id="khI-9N-yKD"/>
+                    <connections>
+                        <outlet property="MapView" destination="wH5-Jx-yUU" id="HsS-9d-GLy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4T-Id-uS4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1200" y="84"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oPb-NW-1Zw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8bk-Ma-lPb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wfb-eZ-JKY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="20q-6y-nyW" kind="relationship" relationship="rootViewController" id="P7n-Cc-ruu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2xC-u1-G6j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-636" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="URL " width="128" height="128"/>
+        <image name="icon_world" width="52" height="67"/>
+    </resources>
+</document>

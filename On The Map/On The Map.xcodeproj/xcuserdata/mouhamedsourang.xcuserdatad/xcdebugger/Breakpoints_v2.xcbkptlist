@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B4E0982D-746D-4A35-9428-5AD67C9BF0F8"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E5A3E443-C978-4190-A853-FE3704888856"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "On The Map/Controller/MapViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D5E24A0-717E-421B-9F54-4380F68A2457"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/UIKit.framework/Headers/UINavigationController.h"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2465E551-918F-4C80-B768-EA6B862B5E10"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "On The Map/StudentLocation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "StudentLocation"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "2465E551-918F-4C80-B768-EA6B862B5E10 - bca20b1bf6be89c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "On_The_Map.StudentLocation.subtitle.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "On The Map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mouhamedsourang/Desktop/Udacity%20IOS%20Project%20/On%20The%20Map/On%20The%20Map/StudentLocation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "131">
+               </Location>
+               <Location
+                  uuid = "2465E551-918F-4C80-B768-EA6B862B5E10 - c2d984c19790c1d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "On_The_Map.StudentLocation.subtitle.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "On The Map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mouhamedsourang/Desktop/Udacity%20IOS%20Project%20/On%20The%20Map/On%20The%20Map/StudentLocation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "166">
+               </Location>
+               <Location
+                  uuid = "2465E551-918F-4C80-B768-EA6B862B5E10 - e63f74a05e69ebc7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "On_The_Map.StudentLocation.subtitle.modify : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "On The Map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mouhamedsourang/Desktop/Udacity%20IOS%20Project%20/On%20The%20Map/On%20The%20Map/StudentLocation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "2465E551-918F-4C80-B768-EA6B862B5E10 - 1cc14897b8d38feb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "On_The_Map.StudentLocation.subtitle.modify : Swift.Optional&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "On The Map"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mouhamedsourang/Desktop/Udacity%20IOS%20Project%20/On%20The%20Map/On%20The%20Map/StudentLocation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
