@@ -4,6 +4,13 @@ A repository for all the projects completed as part of Udacity's IOS nanodegree 
 
 # Projects
 
+| # | Project Summay  | Tech Stack     | Preview | 
+| - | --------------- | -------------- | ------- |
+| 1 |                 |                |         |                 
+| 2 |                 |                |         |  
+| 3 |                 |                |         |  
+| 4 |                 |                |         |  
+
 # Certificate 
 
 
