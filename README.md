@@ -6,7 +6,7 @@ A repository for all the projects completed as part of Udacity's IOS nanodegree 
 
 | # | Project Summay | The App        | Tech Stack| 
 | - | -------------- | -------------- | --------- |
-| 1 | MemeMe: An app that allow users to generate meme |<img src="https://github.com/MoSourang/Udacity_IOS_Nanodegree/blob/master/MemeMe%201.0/screenshots/Meme%20Editor.png" width="280" height="500"> | 1. [UIKit](https://developer.apple.com/documentation/uikit) 2. [Foundation](https://developer.apple.com/documentation/foundation)|     
+| 1 | MemeMe: An app that allow users to generate meme |<img src="https://github.com/MoSourang/Udacity_IOS_Nanodegree/blob/master/MemeMe%201.0/screenshots/Meme%20Editor.png" width="280" height="500"> | [UIKit](https://developer.apple.com/documentation/uikit) [Foundation](https://developer.apple.com/documentation/foundation)|     
 | 2 | On The Map:                |                |         |  
 | 3 | Virtual Tourist:                  |                |         |  
 | 4 | Simply Weather:                |                |         |  
