@@ -1,5 +1,6 @@
 #  Simply Weather
- Simply weather allows you to get weather data for a specific city throught a search feature or by dropping pin on a mapview
+Simply Weather is an an app inspired by the apple weather app, it enables you to search the weather for a specific location using a text based search or by dropping a pin on a mapView
+
 # The App
 
 | TableView    | Search          | DetailView   | MapView    | 
