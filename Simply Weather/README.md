@@ -1,6 +1,5 @@
 #  Simply Weather
-On the map allows users to share their location and a link using the Udacity & Parse API, they can also view the locations and links shared by others students through a table or map view. 
-
+ Simply weather allows you to get weather data for a specific city throught a search feature or by dropping pin on a mapview
 # The App
 
 | TableView    | Search          | DetailView   | MapView    | 
