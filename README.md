@@ -13,6 +13,5 @@ A repository for all the projects completed as part of Udacity's IOS nanodegree 
 
 # Certificate 
 
+![Final Certificate](https://github.com/MoSourang/Udacity_IOS_Nanodegree/blob/master/Screen%20Shot%202020-10-01%20at%209.00.30%20PM.png)
 
-
- 
